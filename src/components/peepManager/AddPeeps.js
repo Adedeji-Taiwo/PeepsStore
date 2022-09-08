@@ -1,11 +1,11 @@
 import Modal from "./Modal";
 import {useState} from 'react'
-import {useAddPeepMutation} from '../../services/peepApi';
+//import {useAddPeepMutation} from '../../services/peepApi';
 
-function AddPeep({onClose, open, data}) {
-  const [title, setTitle] = useState('')
+function AddPeep({onClose, open, handleAddPeep, body, setBody, title, setTitle}) {
+  /*const [title, setTitle] = useState('')
   const [body, setBody] = useState('')
-  const [addPeep] = useAddPeepMutation()
+ const [addPeep] = useAddPeepMutation()
 
   const handleAddPeep = (e) => {
     e.preventDefault()
@@ -21,12 +21,11 @@ function AddPeep({onClose, open, data}) {
       body
     }
     addPeep(peep)
-   data.concat(peep)
+    data.concat(peep);
     onClose()
-   
-   
-  }
- 
+
+  }*/
+
   return (
     <Modal modalLabel='Add peep' onClose={onClose} open={open}>
       <form className='addPeep' name='addPeep' onSubmit={handleAddPeep}>
