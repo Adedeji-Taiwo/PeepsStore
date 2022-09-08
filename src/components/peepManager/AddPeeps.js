@@ -21,12 +21,12 @@ function AddPeep({onClose, open, data}) {
       body
     }
     addPeep(peep)
-    data.concat(peep)
+   data.concat(peep)
     onClose()
    
-    console.log(data.concat(peep))
+   
   }
-
+ 
   return (
     <Modal modalLabel='Add peep' onClose={onClose} open={open}>
       <form className='addPeep' name='addPeep' onSubmit={handleAddPeep}>

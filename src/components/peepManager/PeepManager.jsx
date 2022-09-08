@@ -12,7 +12,7 @@ function PeepManager() {
 
   return (
     <div className='peepManager' id='add'>
-          <header>Peep List</header>
+          <header>Peeps List</header>
         <div className="container">
       <div className='peepManager__container'>
         <button 
