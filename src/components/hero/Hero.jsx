@@ -13,7 +13,7 @@ const Hero = () => {
                           <h1>User data storage  is the job of <span>PeepStore</span></h1>
                           <p>Save all your user details on the go! We do the heavy lifting for you.</p>
                           
-                          <a href="#0" className="main-btn btn-hover">Get Started</a>
+                          <a href="#add" className="main-btn btn-hover">Get Started</a>
           </div>
                   </div>
                   <div className="col-xxl-6 col-xl-6 col-lg-6 offset-xxl-1">

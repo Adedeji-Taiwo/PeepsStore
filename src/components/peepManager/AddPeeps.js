@@ -1,31 +1,8 @@
 import Modal from "./Modal";
-import {useState} from 'react'
-//import {useAddPeepMutation} from '../../services/peepApi';
+
 
 function AddPeep({onClose, open, handleAddPeep, body, setBody, title, setTitle}) {
-  /*const [title, setTitle] = useState('')
-  const [body, setBody] = useState('')
- const [addPeep] = useAddPeepMutation()
-
-  const handleAddPeep = (e) => {
-    e.preventDefault()
-
-    const maxId = data.length > 0 
-    ? Math.max(...data.map(n => n.id))
-    : 0;
-
-    const peep = {
-     userId: 1,
-     id: maxId + 1,
-      title,
-      body
-    }
-    addPeep(peep)
-    data.concat(peep);
-    onClose()
-
-  }*/
-
+ 
   return (
     <Modal modalLabel='Add peep' onClose={onClose} open={open}>
       <form className='addPeep' name='addPeep' onSubmit={handleAddPeep}>
