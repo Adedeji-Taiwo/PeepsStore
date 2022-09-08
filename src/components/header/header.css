@@ -1,0 +1,205 @@
+header {
+  position: relative;
+}
+
+ 
+.navbar-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s ease-out 0s;
+}
+
+
+.sticky {
+  position: fixed;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-out 0s;
+}
+
+.sticky .navbar .navbar-nav .nav-item a {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.sticky .navbar .navbar-nav .nav-item a.active, .sticky .navbar .navbar-nav .nav-item a:hover {
+  color: #606EFF;
+}
+
+.sticky .navbar .navbar-nav .nav-item a.active::after, .sticky .navbar .navbar-nav .nav-item a:hover::after {
+  background: #606EFF;
+}
+
+.sticky .navbar .navbar-toggler .toggler-icon {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.navbar {
+  padding: 0;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.3s ease-out 0s;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .navbar {
+    padding: 0;
+  }
+}
+
+.navbar-brand {
+  padding: 0;
+  cursor: pointer;
+}
+
+.navbar-brand img {
+  max-width: 180px;
+}
+
+.navbar-toggler {
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .navbar-toggler {
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler .toggler-icon {
+  width: 30px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: block;
+  margin: 5px 0;
+  position: relative;
+  transition: all 0.3s ease-out 0s;
+}
+
+.navbar-toggler.active .toggler-icon:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 7px;
+}
+
+.navbar-toggler.active .toggler-icon:nth-of-type(2) {
+  opacity: 0;
+}
+
+.navbar-toggler.active .toggler-icon:nth-of-type(3) {
+  transform: rotate(135deg);
+  top: -7px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9;
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+    padding: 5px 12px;
+  }
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+  padding: 8px 0;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .navbar-nav .nav-item {
+    padding: 0px 0px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .navbar-nav .nav-item:first-child {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .navbar-nav .nav-item:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.navbar-nav .nav-item a {
+  color: rgba(0, 0, 0, 0.9);
+  transition: all 0.3s ease-out 0s;
+  padding: 8px 0px;
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .navbar-nav .nav-item a {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+.navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
+  color: #606EFF;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
+    color: #606EFF;
+  }
+}
+
+.navbar-nav .nav-item a.main-btn {
+  color: #fff;
+  background: #606EFF;
+  padding: 9px 20px;
+  border-radius: 30px;
+}
+
+@media (max-width: 767px) {
+  .header-btn {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 767px) {
+  .header-btn {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .header-btn {
+    margin-right: 60px;
+  }
+}
+
+.header-btn .main-btn {
+  color: #fff;
+  background: #606EFF;
+  padding: 9px 20px;
+  border-radius: 30px;
+}
