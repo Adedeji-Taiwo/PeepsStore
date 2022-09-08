@@ -21,10 +21,10 @@ function AddPeep({onClose, open, data}) {
       body
     }
     addPeep(peep)
-    data.slice(0, 5).concat(peep)
+    data.concat(peep)
     onClose()
    
-    console.log(data.slice(0, 5).concat(peep))
+    console.log(data.concat(peep))
   }
 
   return (

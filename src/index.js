@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './assests/css/bootstrap-5.0.0-beta2.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './assests/css/main.css';
 import {Provider} from 'react-redux'
 import {store} from './store';

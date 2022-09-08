@@ -28,10 +28,10 @@ const Footer = () => {
 						<div className="footer-widget">
 							<h3>About Us</h3>
 							<ul className="links">
-								<li><a href="#0">Home</a></li>
-								<li><a href="#0">Add User</a></li>
-								<li><a href="#0"></a>Peeps List</li>
-								<li><a href="#0">Subscribe</a></li>
+								<li><a href="#home">Home</a></li>
+								<li><a href="#add">Add User</a></li>
+								<li><a href="#list">Peeps List</a></li>
+								<li><a href="#subscribe">Subscribe</a></li>
 		
 							</ul>
 						</div>
